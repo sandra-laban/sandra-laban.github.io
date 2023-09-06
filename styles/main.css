@@ -157,6 +157,6 @@ img {
 
 @media screen and (min-width: 60em) {
   .card {
-    flex: 0 1 calc(33% - 1em);
+    flex: 0 1 calc(25% - 1em);
   }
 }
