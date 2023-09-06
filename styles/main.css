@@ -53,3 +53,28 @@ p {
   font-weight: 300;
   line-height: 1.75;
 }
+/* Header */
+.header {
+  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0px 20px 0px 20px;
+}
+/* Logo */
+.logo {
+  display: inline-block;
+  color: var(--black);
+  font-size: 28px;
+  margin-left: 10px;
+  font-family: 'Prata', serif;
+  padding: 20px 0px 20px 0px;
+  margin-left: 0px;
+}
+.logo span {
+  color: var(--purpule);
+}
