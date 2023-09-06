@@ -87,12 +87,13 @@ p {
   box-sizing: border-box;
 }
 .blog-thumb {
-  background: url(davies-designs-studio-f5_lfi2S-d4-unsplash-1920x1080.jpg);
+  background: url(./images/yousef-espanioly-UoiccpdyTsY-unsplash.jpg);
   width: 100%;
   height: auto;
   -webkit-background-size: cover;
   background-size: cover;
-  padding: 60px;
+  background-position: top;
+  padding: 150px 60px 150px 60px;
 }
 .sprints {
   color: var(--purpule);
@@ -107,13 +108,4 @@ p {
   display: block;
   font-size: 12px;
   color: var(--gray);
-}
-.blog-thumb {
-  background: url(./images/yousef-espanioly-UoiccpdyTsY-unsplash.jpg);
-  width: 100%;
-  height: auto;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: top;
-  padding: 150px 60px 150px 60px;
 }
