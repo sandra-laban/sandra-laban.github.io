@@ -150,7 +150,7 @@ h2.post-subtitle {
   line-height: 1.5;
   font-family: Prata, serif;
   font-weight: 300;
-  margin-top: 20px;
+  margin: 0px;
   text-align: left;
 }
 /* Flexbox stuff */
