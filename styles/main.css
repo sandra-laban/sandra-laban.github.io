@@ -145,6 +145,18 @@ img {
 .blog-main {
   margin: 100px 0px;
 }
+h2.post-subtitle {
+  font-size: 36px;
+  line-height: 1.5;
+  font-family: Prata, serif;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.post-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px 20px 0px 20px;
+}
 /* Flexbox stuff */
 
 @media screen and (min-width: 40em) {
@@ -156,6 +168,9 @@ img {
 
   .card {
     flex: 0 1 calc(50% - 1em);
+  }
+  .post-wrapper {
+    width: 100%;
   }
 }
 
