@@ -52,6 +52,7 @@ p {
   color: var(--gray);
   font-weight: 300;
   line-height: 1.75;
+  margin-bottom: 20px;
 }
 /* Header */
 .header {
@@ -140,7 +141,10 @@ img {
   margin-top: 0;
   margin-bottom: 0.5em;
 }
-
+/* Blog Main Post */
+.blog-main {
+  margin: 100px 0px;
+}
 /* Flexbox stuff */
 
 @media screen and (min-width: 40em) {
