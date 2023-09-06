@@ -87,7 +87,7 @@ p {
   box-sizing: border-box;
 }
 .blog-thumb {
-  background: url(./images/yousef-espanioly-UoiccpdyTsY-unsplash.jpg);
+  background: url(../images/yousef-espanioly-UoiccpdyTsY-unsplash.jpg);
   width: 100%;
   height: auto;
   -webkit-background-size: cover;
