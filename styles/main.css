@@ -172,6 +172,9 @@ h2.post-subtitle {
   margin: 0px;
   text-align: left;
 }
+.footer {
+  margin: 100px 0px 50px 0px;
+}
 /* Flexbox stuff */
 
 @media screen and (min-width: 40em) {
