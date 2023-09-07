@@ -88,7 +88,7 @@ p {
   box-sizing: border-box;
 }
 .blog-thumb {
-  background: url(../images/muriwai.jpg);
+  background: url(../images/muriwai-min.jpg);
   width: 100%;
   height: auto;
   -webkit-background-size: cover;
