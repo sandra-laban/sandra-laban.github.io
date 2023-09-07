@@ -158,7 +158,11 @@ img {
 }
 /* Blog Main Post */
 .blog-main {
-  margin: 100px 0px;
+  margin: 0 auto;
+  padding: 100px 0px;
+}
+h1.post-title {
+  margin-top: 50px;
 }
 h2.post-subtitle {
   font-size: 36px;
@@ -180,10 +184,16 @@ h2.post-subtitle {
   .card {
     flex: 0 1 calc(50% - 1em);
   }
+  .blog-main {
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 60em) {
   .card {
     flex: 0 1 calc(25% - 1em);
+  }
+  .blog-main {
+    max-width: 60%;
   }
 }
