@@ -88,13 +88,27 @@ p {
   box-sizing: border-box;
 }
 .blog-thumb {
-  background: url(../images/yousef-espanioly-UoiccpdyTsY-unsplash.jpg);
+  background: url(../images/muriwai.jpg);
   width: 100%;
   height: auto;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: top;
   padding: 150px 60px 150px 60px;
+}
+.portret {
+  display: inline;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  max-width: 250px;
+  margin-bottom: 50px;
+}
+.intro {
+  font-size: 36px;
+  line-height: 1.5;
+  color: var(--gray);
+  text-align: center;
+  margin: 5%;
 }
 .sprints {
   color: var(--purpule);
