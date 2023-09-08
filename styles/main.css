@@ -1,7 +1,7 @@
 :root {
   --white: #ffffff;
   --black: #000000;
-  --gray: #969696;
+  --gray: #75858f;
   --purple: #5b1ee1;
   --light-grey: #fafafa;
   --mid-grey: #aaaaaa;
@@ -99,7 +99,7 @@ p {
 .portret {
   display: inline;
   border-radius: 50%;
-  border: 10px solid #fff;
+  border: 10px solid var(--white);
   max-width: 250px;
   margin-bottom: 50px;
 }
