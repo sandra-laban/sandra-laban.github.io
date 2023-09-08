@@ -54,6 +54,12 @@ p {
   line-height: 1.75;
   margin-bottom: 20px;
 }
+.uppercase {
+  text-transform: uppercase;
+}
+.mb-5 {
+  margin-bottom: 50px;
+}
 /* Header */
 .header {
   background-color: var(--white);
@@ -182,6 +188,9 @@ h2.post-subtitle {
 }
 .footer {
   margin: 100px 0px 50px 0px;
+}
+.bottom-navigation {
+  margin-top: 50px;
 }
 /* Flexbox stuff */
 

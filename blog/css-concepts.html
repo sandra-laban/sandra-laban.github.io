@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Concepts</title>
+    <meta charset="UTF-8" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <header class="header">
+      <div class="wrapper">
+        <!-- Logo -->
+        <a href="/" class="logo">s<span>.lab</span></a>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="blog-main">
+        <img
+          src="../images/maik-jonietz-_yMciiStJyY-unsplash1920x1080-min.jpg"
+          alt="Css Concepts"
+        />
+        <div>
+          <p class="image-credits">
+            Photo by
+            <a
+              href="https://unsplash.com/@der_maik_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Maik Jonietz</a
+            >
+            on
+            <a
+              href="https://unsplash.com/photos/_yMciiStJyY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Unsplash</a
+            >
+          </p>
+        </div>
+
+        <h1 class="post-title">CSS concepts</h1>
+        <h2 class="post-subtitle">Classes vs IDs</h2>
+        <p>6 September 2023</p>
+        <div class="post-block">
+          <h3>Classes and IDs: What are they?</h3>
+          <p>
+            Classes and IDs in CSS are special labels or tags that we can use to
+            style elements on a webpage. They help us make things look different
+            or special. Think of them like labels or stickers we can put on
+            objects to make them unique or share similar styles.
+          </p>
+          <h3>How do classes work in CSS?</h3>
+          <p>
+            Classes are like stickers we use on many objects to make them look
+            the same. For example, imagine we have different types of flowers,
+            and we want to add colorful ribbons to all of them. We can use a
+            class called "ribbon" and attach it to our flowers in the HTML code.
+            Then, in CSS, we define how elements with the "Ribbon" class should
+            look, such as adding borders and padding.
+          </p>
+          <p>Here's an example of using classes in HTML and CSS:</p>
+          <p class="uppercase">Html:</p>
+          <img class="mb-5" src="../images/html-1.png" alt="html 1" />
+          <p class="uppercase">Css:</p>
+          <img class="mb-5" src="../images/css-1.png" alt="css 1" /><br />
+          <p>
+            In this example, both the Tulip and Rose flowers have the "ribbon"
+            class, so they both get the same border and padding styles.
+          </p>
+          <code>
+            <style>
+              .ribbon {
+                border: 2px solid black;
+                padding: 5px;
+                font-size: 20px;
+                margin-bottom: 10px;
+              }
+            </style>
+            <div class="flower ribbon">Tulip</div>
+            <div class="flower ribbon">Rose</div>
+          </code>
+
+          <!-- Break -->
+          <h3>What about IDs in CSS? How are they different?</h3>
+          <p>
+            IDs are used to make one specific object look very special or
+            unique. Imagine you have a beautiful sunflower in your garden that
+            you want to make extra special. You can give it an ID, like
+            "special-flower." Then, in CSS, you can define unique styles for
+            this flower, like a golden background and larger text.
+          </p>
+          <p>Here's an exampleof using an ID in HTML and CSS:</p>
+          <p class="uppercase">Html:</p>
+          <img class="mb-5" src="../images/html-2.png" alt="html 2" />
+          <p class="uppercase">Css:</p>
+          <img class="mb-5" src="../images/css-2.png" alt="css 2" /><br />
+          <p>
+            In this example, the Sunflower gets the "special-flower" ID, making
+            it unique and giving it special styles like a golden background and
+            larger text.
+          </p>
+          <code>
+            <style>
+              #special-flower {
+                background-color: gold;
+                font-size: 20px;
+              }
+            </style>
+            <div id="special-flower" class="flower">Sunflower</div>
+          </code>
+          <!-- Break -->
+          <h3>
+            What happens when both a class and an ID are used on the same
+            object?
+          </h3>
+          <p>
+            When an object has both a class and an ID, the ID styles usually
+            take precedence. Think of it like having a special sticker that says
+            "Super sunflower" (ID) on a flower with a colorful ribbon (class).
+            If there are conflicting styles between the ID and the class, the ID
+            styles are more special and will be applied.
+          </p>
+          <p>
+            Here's an example of an object with both a class and an ID, and how
+            the styles are applied
+          </p>
+          <p class="uppercase">Html:</p>
+          <img class="mb-5" src="../images/html-3.png" alt="html 3" />
+          <p class="uppercase">Css:</p>
+          <img class="mb-5" src="../images/css-3.png" alt="css 3" /><br />
+          <p>
+            In this case, the Sunflower is both special (thanks to the ID) and
+            has a colorful ribbon (thanks to the class). When there are
+            different instructions (styles) on the ID and class, the ID styles,
+            like the golden background and larger text, take priority because
+            they are more special.
+          </p>
+          <code>
+            <style>
+              #special-flower {
+                background-color: gold; /* ID style */
+                font-size: 20px; /* ID style */
+                border: 2px solid black; /* Class style */
+                padding: 5px; /* Class style */
+              }
+            </style>
+            <div id="special-flower" class="flower ribbon">Sunflower</div>
+          </code>
+          <!-- Break -->
+        </div>
+        <div class="bottom-navigation">
+          <a href="/">Back to home</a>
+        </div>
+      </div>
+      <!-- blog-main ends-->
+    </div>
+    <!-- wrapper ends. -->
+    <footer class="footer">
+      <div class="wrapper">
+        <p class="image-credits">@ 2023 s.lab. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
