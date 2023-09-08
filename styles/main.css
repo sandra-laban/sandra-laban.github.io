@@ -172,6 +172,14 @@ h2.post-subtitle {
   margin: 0px;
   text-align: left;
 }
+.post-block h3 {
+  font-size: 30px;
+  line-height: 1.5;
+  font-family: Prata, serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
 .footer {
   margin: 100px 0px 50px 0px;
 }
