@@ -47,6 +47,20 @@ h3 {
   font-family: Prata, serif;
   font-weight: 300;
 }
+h4 {
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: Prata, serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+h5 {
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: Prata, serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
 p {
   font-size: 18px;
   color: var(--gray);
@@ -96,6 +110,7 @@ p {
 }
 .blog-thumb {
   background: url(../images/muriwai-min.jpg);
+  background-color: #283961;
   width: 100%;
   height: auto;
   -webkit-background-size: cover;
@@ -168,6 +183,17 @@ img {
   margin: 0 auto;
   padding: 100px 0px;
 }
+.blog-main ul {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+.blog-main ul li {
+  font-size: 18px;
+  color: var(--gray);
+  list-style: circle;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
 h1.post-title {
   margin-top: 50px;
 }
@@ -212,7 +238,7 @@ h2.post-subtitle {
 
 @media screen and (min-width: 60em) {
   .card {
-    flex: 0 1 calc(25% - 1em);
+    flex: 0 1 calc(33% - 1em);
   }
   .blog-main {
     max-width: 60%;
