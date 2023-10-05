@@ -1,26 +1,52 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>Learning Plan</title>
     <meta charset="UTF-8" />
-    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Prata&display=swap"
       rel="stylesheet"
     />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <title>Learning Plan</title>
   </head>
   <body>
-    <!-- Navigation bar -->
-    <header class="header">
-      <div class="wrapper">
-        <!-- Logo -->
-        <a href="/" class="logo">s<span>.lab</span></a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand logo" href="/">s<span>.lab</span></a>
+        <!--<button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+          </ul>
+        </div>-->
       </div>
-    </header>
-    <div class="wrapper">
-      <div class="blog-main">
+    </nav>
+    <!-- end .nav-->
+    <div class="container">
+      <div class="row blog-main">
         <img
           src="../images/lacie-slezak-yHG6llFLjS0-unsplash-1920x1080-min.jpg"
           alt="learning plan"
@@ -41,7 +67,7 @@
             >
           </p>
         </div>
-
+        <!--Blog Content Starts -->
         <h1 class="post-title">Learning Plan</h1>
         <h2 class="post-subtitle">Bootcamp learning plan</h2>
         <p>28 September 2023</p>
@@ -80,7 +106,6 @@
             a friendly atmosphere as I learn. I want to gain more confidence and
             knowledge, so I can reach my full potential during this journey.
           </p>
-
           <h3>Expectations of myself on Bootcamp</h3>
           <p>
             If I get stuck with finding solution by my self I will reach out to
@@ -89,10 +114,10 @@
             objectives on time.
           </p>
         </div>
-        <br />
-        <h2 class="post-subtitle">Foundations learning plan</h2>
-        <p>9 September 2023</p>
         <div class="post-block">
+          <br />
+          <h2 class="post-subtitle">Foundations learning plan</h2>
+          <p>9 September 2023</p>
           <h3>The long term goal</h3>
           <p>
             Well, so far I was working as web developer/designer in the
@@ -185,16 +210,45 @@
           </p>
         </div>
         <div class="bottom-navigation">
-          <a href="/">Back to home</a>
+          <a href="./te-houtaewa-template.html" class="previous"
+            >&laquo; The story of Te Houtaewa</a
+          >
+          <a href="./css-concepts.html" class="next">CSS concepts &raquo;</a>
         </div>
+        <!-- Blog Content Ends-->
       </div>
-      <!-- blog-main ends-->
     </div>
-    <!-- wrapper ends. -->
-    <footer class="footer">
-      <div class="wrapper">
-        <p class="image-credits">@ 2023 s.lab. All rights reserved.</p>
+    <div class="container">
+      <button
+        type="button"
+        class="btn btn-primary btn-floating btn-lg purple"
+        id="btn-back-to-top"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-arrow-up"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"
+          />
+        </svg>
+      </button>
+      <div class="row">
+        <footer class="footer">
+          <p class="image-credits">@ 2023 s.lab. All rights reserved.</p>
+        </footer>
       </div>
-    </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/back-to-top.js" type="module"></script>
   </body>
 </html>

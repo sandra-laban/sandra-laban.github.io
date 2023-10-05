@@ -1,234 +1,299 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Prata&display=swap"
       rel="stylesheet"
     />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
     <title>Sandra's Blog</title>
+  </head>
   <body>
-     <!-- Navigation bar -->
-     <header class="header">
-      <div class="wrapper">
-        <!-- Logo -->
-        <a href="/" class="logo">s<span>.lab</span></a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand logo" href="/">s<span>.lab</span></a>
+        <!-- <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+          </ul>
+        </div> -->
       </div>
-    </header>
-    <div class="wrapper">
-      <div class="blog-thumb">
-        <div class="blog-heading" style="color: #fff; text-align: center">
-          <img
-            class="portret"
-            src="./images/sandra-portret-2-min.jpg"
-            alt="sandra portret"
+    </nav>
+    <!-- end .nav-->
+    <div class="container">
+      <div class="row">
+        <div class="blog-thumb">
+          <div class="blog-heading" style="color: #fff; text-align: center">
+            <img
+              class="portret"
+              src="./images/sandra-portret-2-min.jpg"
+              alt="sandra portret"
+            />
+            <h1 class="welcome">Hi, I'm Sandra.</h1>
+          </div>
+        </div>
+        <div>
+          <p class="intro">
+            Welcome to my blog page! I'm on this incredible journey with Dev
+            Academy, boosting my development skills.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End container hero-->
+    <div class="container">
+      <div align="center">
+        <button class="btn btn-default filter-button" data-filter="all">
+          All
+        </button>
+        <button class="btn btn-default filter-button" data-filter="sprint1">
+          Sprint 1
+        </button>
+        <button class="btn btn-default filter-button" data-filter="sprint2">
+          Sprint 2
+        </button>
+        <button class="btn btn-default filter-button" data-filter="sprint3">
+          Sprint 3
+        </button>
+        <button class="btn btn-default filter-button" data-filter="sprint4">
+          Sprint 4
+        </button>
+        <button class="btn btn-default filter-button" data-filter="sprint5">
+          Sprint 5
+        </button>
+        <button class="btn btn-default filter-button" data-filter="tech">
+          Tech
+        </button>
+        <button class="btn btn-default filter-button" data-filter="core">
+          Core
+        </button>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col filter sprint1 core">
+          <div class="card">
+            <img
+              src="./images/oksana-taran-GEjCwneU-YY-unsplash1920x1080-min.jpg"
+              class="card-img-top"
+              alt="Identity"
+            />
+            <div class="card-body">
+              <p class="sprints">Sprint 1 Core</p>
+              <h3 class="card-title">Identity, values and strengths</h3>
+              <a class="stretched-link" href="./blog/identity-values.html"></a>
+            </div>
+          </div>
+        </div>
+        <!-- ends .col-->
+        <div class="col filter sprint1 tech">
+          <div class="card">
+            <img
+              src="./images/tim-marshall-2FFh56Q9jWs-unsplash-min.jpg"
+              class="card-img-top"
+              alt="Te Houtaewa"
+            />
+            <div class="card-body">
+              <p class="sprints">Sprint 1 Tech</p>
+              <h3 class="card-title">The story of Te Houtaewa</h3>
+              <a
+                class="stretched-link"
+                href="./blog/te-houtaewa-template.html"
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- ends .col-->
+        <div class="col filter sprint2 core">
+          <div class="card">
+            <img
+              src="./images/lacie-slezak-yHG6llFLjS0-unsplash-1920x1080-min.jpg"
+              class="card-img-top"
+              alt="learning plan"
+            />
+            <div class="card-body">
+              <p class="sprints">Sprint 2 Core</p>
+              <h3 class="card-title">Learning plan</h3>
+              <a class="stretched-link" href="./blog/learning-plan.html"></a>
+            </div>
+          </div>
+        </div>
+        <!-- ends .col-->
+        <div class="col filter sprint2 tech">
+          <div class="card">
+            <img
+              src="./images/maik-jonietz-_yMciiStJyY-unsplash1920x1080-min.jpg"
+              class="card-img-top"
+              alt="Css concept"
+            />
+            <div class="card-body">
+              <p class="sprints">Sprint 2 Tech</p>
+              <h3 class="card-title">CSS concepts</h3>
+              <a class="stretched-link" href="./blog/css-concepts.html"></a>
+            </div>
+          </div>
+        </div>
+        <!-- ends .col-->
+        <div class="col filter sprint3 core">
+          <div class="card">
+            <img
+              src="./images/christina-wocintechchat-com-eF7HN40WbAQ-unsplash-1920x1080-min.jpg"
+              class="card-img-top"
+              alt="Emotional intelligence"
+            />
+            <div class="card-body">
+              <p class="sprints">Sprint 3 Core</p>
+              <h3 class="card-title">Emotional intelligence</h3>
+              <a
+                class="stretched-link"
+                href="./blog/emotional-intelligence.html"
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- ends .col-->
+        <div class="col filter sprint3 tech">
+          <div class="card">
+            <img
+              src="./images/altumcode-dC6Pb2JdAqs-unsplash-1920x1080-min.jpg"
+              class="card-img-top"
+              alt="Technical blog JS fundamentals"
+            />
+            <div class="card-body">
+              <p class="sprints">Sprint 3 Tech</p>
+              <h3 class="card-title">Technical blog</h3>
+              <a class="stretched-link" href="./blog/javascript-dom.html"></a>
+            </div>
+          </div>
+        </div>
+        <!-- ends .col-->
+        <div class="col filter sprint4 core">
+          <div class="card">
+            <img
+              src="./images/neuroplasticity-min.jpg"
+              class="card-img-top"
+              alt="neuroplasticity"
+            />
+            <div class="card-body">
+              <p class="sprints">Sprint 4 Core</p>
+              <h3 class="card-title">Neuroplasticity and growth mindset</h3>
+              <a class="stretched-link" href="./blog/neuroplasticity.html"></a>
+            </div>
+          </div>
+        </div>
+        <!-- ends .col-->
+        <div class="col filter sprint4 tech">
+          <div class="card">
+            <img
+              src="./images/problem-soliving-min.jpg"
+              class="card-img-top"
+              alt="problem soliving"
+            />
+            <div class="card-body">
+              <p class="sprints">Sprint 4 Tech</p>
+              <h3 class="card-title">Problem solving</h3>
+              <a class="stretched-link" href="./blog/problem-solving.html"></a>
+            </div>
+          </div>
+        </div>
+        <!-- ends .col-->
+        <div class="col filter sprint4 core">
+          <div class="card">
+            <img
+              src="./images/te-whare-tapa-wha-min.jpg"
+              class="card-img-top"
+              alt="te whare tapa wha"
+            />
+            <div class="card-body">
+              <p class="sprints">Sprint 4 Core</p>
+              <h3 class="card-title">Te Whare Tapa Whā</h3>
+              <a
+                class="stretched-link"
+                href="./blog/te-whare-tapa-wha.html"
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- ends .col-->
+        <div class="col filter sprint5 core">
+          <div class="card">
+            <img
+              src="./images/reflections-min.jpg"
+              class="card-img-top"
+              alt="te whare tapa wha"
+            />
+            <div class="card-body">
+              <p class="sprints">Sprint 5 Core</p>
+              <h3 class="card-title">Reflections</h3>
+              <a
+                class="stretched-link"
+                href="./blog/foundations-reflection.html"
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- ends .col-->
+      </div>
+      <!-- ends .row-cols-1 -->
+    </div>
+    <!-- ends .container .cards-->
+    <div class="container">
+      <button
+        type="button"
+        class="btn btn-primary btn-floating btn-lg"
+        id="btn-back-to-top"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-arrow-up"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"
           />
-          <h1 class="welcome">Hi, I'm Sandra.</h1>
-        </div>
-      </div>
-      <div>
-        <p class="intro">
-          Welcome to my blog page! I'm on this incredible journey with Dev
-          Academy, boosting my development skills.
-        </p>
+        </svg>
+      </button>
+      <div class="row">
+        <footer class="footer">
+          <p class="image-credits">@ 2023 s.lab. All rights reserved.</p>
+        </footer>
       </div>
     </div>
-    <!-- wpapper ends -->
-    <div class="wrapper">
-      <main class="main-area">
-        <div class="centered">
-          <section class="cards">
-            <article class="card">
-              <a href="./blog/identity-values.html">
-                <picture class="thumbnail">
-                  <img
-                    src="./images/oksana-taran-GEjCwneU-YY-unsplash1920x1080-min.jpg"
-                    alt="Identity"
-                  />
-                </picture>
-                <div class="card-content">
-                  <p class="sprints">Sprint 1 Core</p>
-                  <h3>Identity, values and strengths</h3>
-                  <p>This is reflection on my core personal
-                    values, and my strengths and limitations.</p>
-                </div>
-                <!-- .card-content -->
-              </a>
-            </article>
-            <!-- .card -->
-            <article class="card">
-              <a href="./blog/te-houtaewa-template.html">
-                <picture class="thumbnail">
-                  <img
-                    src="./images/tim-marshall-2FFh56Q9jWs-unsplash-min.jpg"
-                    alt="Te Houtaewa"
-                  />
-                </picture>
-                <div class="card-content">
-                  <p class="sprints">Sprint 1 Tech</p>
-                  <h3>The story of Te Houtaewa</h3>
-                  <p>
-                    Te Houtaewa was the fastest runner of his day and played
-                    many pranks on his peoples enemies.
-                  </p>
-                </div>
-                <!-- .card-content -->
-              </a>
-            </article>
-            <!-- .card -->
-            <article class="card">
-              <a href="./blog/learning-plan.html">
-                <picture class="thumbnail">
-                  <img
-                    src="./images/lacie-slezak-yHG6llFLjS0-unsplash-1920x1080-min.jpg"
-                    alt="learning plan"
-                  />
-                </picture>
-                <div class="card-content">
-                  <p class="sprints">Sprint 2 Core</p>
-                  <h3>Learning plan</h3>
-                  <p>This learning plan describes how I will operate within the Dev Academy
-                    Foundations</p>
-                </div>
-                <!-- .card-content -->
-              </a>
-            </article>
-            <!-- .card -->
-
-            <article class="card">
-              <a href="./blog/css-concepts.html">
-                <picture class="thumbnail">
-                  <img
-                    src="./images/maik-jonietz-_yMciiStJyY-unsplash1920x1080-min.jpg"
-                    alt="Css concept"
-                  />
-                </picture>
-                <div class="card-content">
-                  <p class="sprints">Sprint 2 Tech</p>
-                  <h3>CSS concepts</h3>
-                  <p>Classes vs IDs</p>
-                </div>
-                <!-- .card-content -->
-              </a>
-            </article>
-            <!-- .card -->
-            <article class="card">
-              <a href="./blog/emotional-intelligence.html">
-                <picture class="thumbnail">
-                  <img
-                    src="./images/christina-wocintechchat-com-eF7HN40WbAQ-unsplash-1920x1080-min.jpg"
-                    alt="Emotional intelligence"
-                  />
-                </picture>
-                <div class="card-content">
-                  <p class="sprints">Sprint 3 Core</p>
-                  <h3>Emotional intelligence</h3>
-                  <p>IQ vs EI/EQ</p>
-                </div>
-                <!-- .card-content -->
-              </a>
-            </article>
-            <!-- .card -->
-            <article class="card">
-              <a href="./blog/javascript-dom.html">
-                <picture class="thumbnail">
-                  <img
-                    src="./images/altumcode-dC6Pb2JdAqs-unsplash-1920x1080-min.jpg"
-                    alt="Technical blog JS fundamentals"
-                  />
-                </picture>
-                <div class="card-content">
-                  <p class="sprints">Sprint 3 Tech</p>
-                  <h3>Technical blog</h3>
-                  <p>JavaScript fundamentals</p>
-                </div>
-                <!-- .card-content -->
-              </a>
-            </article>
-            <!-- .card -->
-            <article class="card">
-              <a href="./blog/neuroplasticity.html">
-                <picture class="thumbnail">
-                  <img
-                    src="./images/neuroplasticity-min.jpg"
-                    alt="neuroplasticity"
-                  />
-                </picture>
-                <div class="card-content">
-                  <p class="sprints">Sprint 4 Core</p>
-                  <h3>Neuroplasticity and growth mindset</h3>
-                  <p>Until recently, scientists believed our brains stayed the same after
-                    childhood, but that's not true.</p>
-                </div>
-                <!-- .card-content -->
-              </a>
-            </article>
-            <!-- .card -->
-            <article class="card">
-              <a href="./blog/problem-solving.html">
-                <picture class="thumbnail">
-                  <img
-                    src="./images/problem-soliving-min.jpg"
-                    alt="problem soliving"
-                  />
-                </picture>
-                <div class="card-content">
-                  <p class="sprints">Sprint 4 Tech</p>
-                  <h3>Problem solving</h3>
-                  <p>Important skill to have as a developer!</p>
-                </div>
-                <!-- .card-content -->
-              </a>
-            </article>
-            <!-- .card -->
-            <article class="card">
-              <a href="./blog/te-whare-tapa-wha.html">
-                <picture class="thumbnail">
-                  <img
-                    src="./images/te-whare-tapa-wha-min.jpg"
-                    alt="te whare tapa wha"
-                  />
-                </picture>
-                <div class="card-content">
-                  <p class="sprints">Sprint 4 Core</p>
-                  <h3>Te Whare Tapa Whā</h3>
-                  <p>Wellbeing plan</p>
-                </div>
-                <!-- .card-content -->
-              </a>
-            </article>
-            <!-- .card -->
-            <article class="card">
-              <a href="./blog/foundations-reflection.html">
-                <picture class="thumbnail">
-                  <img
-                    src="./images/reflections-min.jpg"
-                    alt="reflections"
-                  />
-                </picture>
-                <div class="card-content">
-                  <p class="sprints">Sprint 5 Core</p>
-                  <h3>Reflections</h3>
-                  <p>Reflection on my learning journey into the Core Skills</p>
-                </div>
-                <!-- .card-content -->
-              </a>
-            </article>
-            <!-- .card -->
-          </section>
-          <!-- .cards -->
-        </div>
-        <!-- .centered -->
-      </main>
-    </div>
-    <!-- wpapper ends -->
-    <footer class="footer">
-      <div class="wrapper">
-        <p class="image-credits">@ 2023 s.lab. All rights reserved.</p>
-      </div>
-    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="../js/cards.js" type="module"></script>
+    <script src="../js/back-to-top.js" type="module"></script>
   </body>
 </html>
