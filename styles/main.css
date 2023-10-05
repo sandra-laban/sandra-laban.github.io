@@ -101,8 +101,9 @@ a.navbar-brand {
   display: inline;
   border-radius: 50%;
   border: 10px solid var(--white);
-  max-width: 250px;
+  width: 250px;
   margin-bottom: 50px;
+  height: 250px;
 }
 .intro {
   font-size: 36px;
