@@ -216,6 +216,9 @@ img {
   -webkit-box-shadow: 0 18px 15px 0 hsla(0, 0%, 72.5%, 0.9);
   box-shadow: 0 18px 15px 0 hsla(0, 0%, 72.5%, 0.9);
 }
+.card-footer {
+  background: none;
+}
 #btn-back-to-top {
   position: fixed;
   bottom: 40px;
