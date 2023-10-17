@@ -220,8 +220,11 @@
     </div>
     <div class="container">
       <button
+        aria-expanded="false"
+        title="Back"
+        aria-label="Back"
         type="button"
-        class="btn btn-primary btn-floating btn-lg purple"
+        class="btn btn-primary btn-floating btn-lg"
         id="btn-back-to-top"
       >
         <svg
@@ -231,6 +234,8 @@
           fill="currentColor"
           class="bi bi-arrow-up"
           viewBox="0 0 16 16"
+          aria-hidden="true"
+          focusable="false"
         >
           <path
             fill-rule="evenodd"
